@@ -1,4 +1,4 @@
-package operation;
+package Operation;
 
 import dto.rawDataDto;
 import kr.co.shineware.nlp.posta.en.core.EnPosta;

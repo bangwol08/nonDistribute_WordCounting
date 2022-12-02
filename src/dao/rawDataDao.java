@@ -20,7 +20,7 @@ public class rawDataDao {
 
         try {
             DBConnection dc = new DBConnection();
-            conn = dc.getConnection("localhost","3307"); //db 내의 데이터를 저장
+            conn = dc.getConnection("localhost","3306"); //db 내의 데이터를 저장
             state = conn.createStatement(); //sql 문을 실행하기 위해 conn 연결 정보를 state로 생성
 
             String sql;

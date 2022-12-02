@@ -14,7 +14,7 @@ public class resultDao {
 
     public void insertResultList(ArrayList<resultDto> resultDataList) {
         DBConnection dc = new DBConnection();
-        conn = dc.getConnection("localhost","3307"); //db 내의 데이터를 저장
+        conn = dc.getConnection("localhost","3306"); //db 내의 데이터를 저장
         PreparedStatement pstmt = null;
 
         try {

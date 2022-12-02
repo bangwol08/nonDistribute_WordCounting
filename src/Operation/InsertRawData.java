@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 public class InsertRawData
 {
     public void insertRawData() throws IOException {
-        DBcontroller dbcontroller = new DBcontroller("serverA","localhost","3307","distribute_database","tempuser","qwe123!@#");
+        DBcontroller dbcontroller = new DBcontroller("localhost","localhost","3306","distribute_database","tempuser","qwe123!@#");
 
         if(dbcontroller.conn == null)
         {
