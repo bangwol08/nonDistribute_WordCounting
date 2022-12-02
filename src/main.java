@@ -22,6 +22,8 @@ public class main
         System.out.println("If you want to start Press Enter");
         scan.nextLine();
 
+        long beforeTime = System.currentTimeMillis(); //코드 시작전 시간 받아오기
+
         //File 읽어서 DB에 INSERT
         System.out.println("INSERT Progress!");
         try
@@ -40,8 +42,11 @@ public class main
         process.startWordCouning();
         System.out.println("WordCounting Complete!");
 
-        //결과값보기 유도
+        //종료후 시간 측정
+        long afterTime = System.currentTimeMillis(); // 코드 실행 후에 시간 받아오기
+        long secDiffTime = (afterTime - beforeTime)/1000; //두 시간에 차 계산
+        long mDiffTime = (afterTime - beforeTime)%1000;
         System.out.println("All process Complete!");
-        System.out.println("Result : bangwol08.iptime.org:50011");
+        System.out.println("분산 워드카운팅 소요시간 : " + secDiffTime + "." + mDiffTime + "초");
     }
 }
